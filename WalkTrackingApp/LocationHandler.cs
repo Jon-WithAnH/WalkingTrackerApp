@@ -88,7 +88,7 @@ namespace WalkTrackingApp
                 }
                 else
                 {
-                    //idk
+                    //shouldn't happen
                 }
 
             }
