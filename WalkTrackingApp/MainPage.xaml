@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApp.MainPage">
+
+    <StackLayout>
+        <Label Text="Over the past 10 outings, you've had a..." HorizontalOptions="Center" Padding="30,20,30,10"/>
+        <Label x:Name="averageSpeedXAML" Text="7" FontSize="32" HorizontalOptions="Center" Padding="30,10,30,0"/>
+        <Label Text="Average Speed" HorizontalOptions="Center" FontSize="16" Padding="30,0,30,30"/>
+        <Label x:Name="averageTimeXAML" Text="00h42m51" FontSize="32" HorizontalOptions="Center" Padding="30,0,30,0"/>
+        <Label Text="Average Time" HorizontalOptions="Center" FontSize="16" Padding="30,0,30,30"/>
+        <Label x:Name="averageDistanceXAML" Text="3.52 miles" FontSize="32" HorizontalOptions="Center" Padding="30,0,30,0"/>
+        <Label  Text="Average Distance (Miles)" HorizontalOptions="Center" FontSize="16" Padding="30,0,30,30"/>
+        <Button Text="New Run" Clicked="OnBtn_Clicked" Margin="30,0"/>
+        <Button Text="View Logs" Clicked="viewLogs_Clicked" Margin="30,0"/>
+        <Button Text="Update averages (FOR DEMO PURPOSE ONLY)" Clicked="rows_Clicked" Margin="30,0"/>
+    </StackLayout>
+
+</ContentPage>

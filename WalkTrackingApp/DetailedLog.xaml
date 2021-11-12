@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalApp.DetailedLog"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             Title="Detailed Information">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Grid.Row="0">
+                <Label x:Name="dayTime" Padding="0,20,0,0"
+                Text="0"
+                FontSize="22"
+                HorizontalOptions="CenterAndExpand" />
+                <Label 
+                Text="Time Saved At"
+              FontSize="12"
+                HorizontalOptions="CenterAndExpand" />
+
+                <Label 
+                x:Name="time"
+                Text="0"
+              FontSize="22"
+                HorizontalOptions="CenterAndExpand" />
+                <Label 
+                Text="Time Active"
+              FontSize="12"
+                HorizontalOptions="CenterAndExpand" />
+
+                <Label x:Name="mph"
+                Text="0"
+                FontSize="22"
+                HorizontalOptions="CenterAndExpand" />
+                <Label 
+                Text="Average Speed"
+              FontSize="12"
+                HorizontalOptions="CenterAndExpand" />
+
+                <Label x:Name="distance"
+                Text="3.4"
+                FontSize="22"
+                HorizontalOptions="CenterAndExpand" />
+                <Label
+                Text="Miles Ran"
+                FontSize="12"
+                HorizontalOptions="CenterAndExpand" />
+                <Button
+                    Text="Update Map"
+                    Clicked="Button_Clicked"/>
+
+
+            </StackLayout>
+            <maps:Map x:Name="map" Grid.Row="1" VerticalOptions="FillAndExpand" HasZoomEnabled="True"></maps:Map>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
